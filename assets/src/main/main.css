@@ -1,0 +1,130 @@
+
+/* main colors */
+
+.main-red-text{
+    color: #d12525
+}
+
+.main-red-bg{
+    background-color: #d12525;
+}
+
+
+/* main colors */
+
+
+/* start navbar */
+
+  
+
+
+/* end navbar */
+
+
+
+/* main btn */
+
+  .main-btn{
+    background-color:#d12525;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-btn::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: green;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.main-btn:hover::before{
+   width: 100%;
+   height: 100%;
+}
+
+/* main btn */
+
+
+
+/* bar-btn */
+
+.bar-btn{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    border: none;
+    background-color: transparent;
+}
+
+.bar-btn span{
+    width: 20px;
+    height: 10px;
+}
+
+.bar-btn span::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    border-radius:7px ;
+    -webkit-border-radius:7px ;
+    -moz-border-radius:7px ;
+    -ms-border-radius:7px ;
+    -o-border-radius:7px ;
+}
+
+.bar-btn .first::before{
+
+       right: 0px;
+    top: 5px;
+    width: 20px;
+    height: 3px;
+
+  
+}
+
+.bar-btn .second::before{
+    width: 100%;
+    height: 3px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.bar-btn .third::before{
+   
+     width: 20px;
+    height: 3px;
+    left:0;
+    bottom: 5px;
+}
+
+
+/* bar-btn */
