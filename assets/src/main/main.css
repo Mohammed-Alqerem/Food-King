@@ -1,4 +1,15 @@
 
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
 /* main colors */
 
 .main-red-text{
@@ -9,11 +20,96 @@
     background-color: #d12525;
 }
 
+/* cursor pointer */
+
+.cursor__pointer{
+    cursor: pointer;
+}
+
 
 /* main colors */
 
 
 /* start navbar */
+
+.nav-bar .container ul li a{
+ 
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar .container > ul li i{
+    cursor: pointer;
+}
+
+
+
+
+.mega-menu{
+    position: absolute;
+    width: 230px;
+        visibility: hidden;
+        z-index: -1;
+        opacity: 0;
+    top: calc(100% + 50px);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.mega-menu ul{
+    width: 100%;
+    
+    gap: 20px;
+
+}
+
+.mega-menu li,
+.mega-menu a{
+    display: block
+}
+
+.mega-menu li:not(:last-child){
+    border-bottom: 1px solid #ccc;
+}
+
+.mega-menu li a{
+    padding:15px 20px;
+}
+
+.mega-menu li:hover{
+
+}
+
+.mega-menu li:hover a{
+
+background-color: #D12525;
+color: white !important;
+
+}
+
+.mega-menu li a{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.nav-bar ul li:hover .mega-menu{
+   
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+     top:100%;
+}
+
+.nav-bar ul li{
+    position: relative;
+}
+
 
   
 
@@ -128,3 +224,32 @@
 
 
 /* bar-btn */
+
+
+/* cart-notification */
+
+.cart-notification{
+    position: relative;
+}
+
+.cart-notification::before{
+    content: '0';
+    color: white;
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    top: -3px;
+    right: -6px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* cart-notification */
