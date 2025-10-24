@@ -75,6 +75,11 @@ transform: rotate(.5turn);
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
+    z-index: -1;
+    
+}
+.no-wrap{
+    white-space: nowrap;
 }
 
 @media (max-width:768px){
@@ -84,4 +89,5 @@ transform: rotate(.5turn);
     .fs-md{
         font-size: 16px !important;
     }
+    
 }
