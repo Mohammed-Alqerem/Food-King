@@ -1,6 +1,11 @@
+body{
+     font-family: "Barlow Condensed", sans-serif;
+}
 .shop-Grid-header-bg{
     background-image: url('./images/breadcrumb\ \(1\).webp');
     background-size: cover;
+   
+    
 }
 .p-80{
     padding: 80px;
@@ -21,4 +26,12 @@
 }
 .main-hover-success:hover{
   color: #00813d !important;
+}
+@media (max-width:768px){
+    .fs-70{
+        font-size: 40px;
+    }
+    .fs-md{
+        font-size: 16px !important;
+    }
 }
