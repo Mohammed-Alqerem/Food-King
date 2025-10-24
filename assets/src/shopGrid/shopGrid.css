@@ -38,12 +38,16 @@ body{
     -ms-transition: transform .3s ease-in;
     -o-transition: transform .3s ease-in;
 }
-.icon-hover:hover{
-    transform: rotate(.5turn);
+.cursor{
+    cursor: pointer !important;
+}
+.price-hover:hover .icon-hover{
+transform: rotate(.5turn);
     -webkit-transform: rotate(.5turn);
     -moz-transform: rotate(.5turn);
     -ms-transform: rotate(.5turn);
     -o-transform: rotate(.5turn);
+    
 }
 @media (max-width:768px){
     .fs-70{
