@@ -50,9 +50,31 @@ transform: rotate(.5turn);
     
 }
 .appBarr-ul-bg{
-    background-color: 
-#f4f1ea;
-
+    background-color: #f4f1ea;
+    border-radius:8px ;
+    -webkit-border-radius:8px ;
+    -moz-border-radius:8px ;
+    -ms-border-radius:8px ;
+    -o-border-radius:8px ;
+}
+.price-hover:hover .top-left{
+    top: 117px;
+    opacity: 1;
+}
+.top-left{
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
 }
 
 @media (max-width:768px){
