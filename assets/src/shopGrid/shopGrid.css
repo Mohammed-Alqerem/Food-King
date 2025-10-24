@@ -27,6 +27,10 @@ body{
 .main-hover-success:hover{
   color: #00813d !important;
 }
+.border-bar{
+    border: 1px solid #d9d9d9;
+    padding: 20px 30px;
+}
 @media (max-width:768px){
     .fs-70{
         font-size: 40px;
