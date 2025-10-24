@@ -4,7 +4,7 @@ body{
 .shop-Grid-header-bg{
     background-image: url('./images/breadcrumb\ \(1\).webp');
     background-size: cover;
-   
+    background-position: center;
     
 }
 .p-80{
