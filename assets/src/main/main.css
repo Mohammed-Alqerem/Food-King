@@ -9,6 +9,11 @@ a{
 }
 
 
+.sm-width{
+    width: 40px;
+}
+
+
 
 /* main colors */
 
@@ -250,3 +255,66 @@ color: white !important;
 }
 
 /* cart-notification */
+
+
+
+
+/* offcanvas */
+   .offcanvas {
+    border-left: #D12525 2px solid !important;
+   }
+
+  .offcanvas .offcanvas-header .btn-close{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-weight: bold;
+    opacity: 1;
+    background-image: url("");
+    color: white;
+}
+
+
+
+/* offcanvas */
+
+
+.social-icon{
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+.social-icon:hover i{
+    color: white;
+}
+
+.social-icon i{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+.social-icon:hover{
+    background-color: #D12525;
+    border-color: #D12525;
+}
+
+
+
