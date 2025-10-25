@@ -259,6 +259,29 @@ transform: rotate(.5turn);
 .text-secondarY{
     color: #5c5c5b;
 }
+.fix-card{
+    /* pointer-events: none; */
+    background-color: #ffb936;
+}
+.fix-card .catagory-btn-bar{
+    opacity: 1 !important;
+}
+.fix-card .icon-heart{
+    color: #ffb936;
+    background-color: white;
+}
+.fix-card .w-40{
+    background-color: white;
+}
+.fix-card .hover-color-white  {
+    color: white !important;
+}
+.fix-card .d-hover-inline-block{
+    display: inline-block !important;
+}
+.fix-card .catagory-btn-bar::before{
+    top: 50.5%;
+}
 /*end card*/
 @media (max-width:768px){
     .fs-70{
