@@ -27,6 +27,8 @@ body{
 .main-hover-success:hover{
   color: #00813d !important;
 }
+/*end main*/
+/*start bar section*/
 .border-bar{
     border: 1px solid #d9d9d9;
     padding: 20px 30px;
@@ -78,10 +80,68 @@ transform: rotate(.5turn);
     z-index: -1;
     
 }
+
 .no-wrap{
     white-space: nowrap;
 }
-
+/*end bar section*/
+/*start card */
+.card-bar{
+    width: fit-content;
+   border: none;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.icon-heart{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+.catagory-btn-bar{
+   background-color: black;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+   border-radius: 35px;
+   -webkit-border-radius: 35px;
+   -moz-border-radius: 35px;
+   -ms-border-radius: 35px;
+   -o-border-radius: 35px;
+   font-size: 14px;
+}
+.icon-shop-svg{
+    position: absolute;
+    left: -30px;
+}
+.w-40{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #ffb936;
+    display: grid;
+    place-items: center;
+}
+.text-secondarY{
+    color: #5c5c5b;
+}
+/*end card*/
 @media (max-width:768px){
     .fs-70{
         font-size: 40px;
