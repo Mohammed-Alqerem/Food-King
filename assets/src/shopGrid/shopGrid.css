@@ -134,6 +134,7 @@ transform: rotate(.5turn);
      -ms-transform: translateY(0%);
      -o-transform: translateY(0%);
      opacity: 1;
+     background-image: url('./images/catagory-card-shape.webp');
 }
 .card-bar:hover .catagory-btn-bar{
     opacity: 1 !important;
@@ -262,6 +263,7 @@ transform: rotate(.5turn);
 .fix-card{
     /* pointer-events: none; */
     background-color: #ffb936;
+     background-image: url('./images/catagory-card-shape.webp');
 }
 .fix-card .catagory-btn-bar{
     opacity: 1 !important;
