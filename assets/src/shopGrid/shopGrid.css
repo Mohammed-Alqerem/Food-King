@@ -172,6 +172,10 @@ transform: rotate(.5turn);
    z-index: 1;
    
 }
+.w-img{
+    width: 232px !important;
+    
+}
 .catagory-btn-bar::before{
     content: '';
     width: 0;
