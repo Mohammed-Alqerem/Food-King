@@ -61,7 +61,8 @@ transform: rotate(.5turn);
 }
 .price-hover:hover .top-left{
     top: 117px;
-    opacity: 1;
+    /* opacity: 1; */
+    display: flex !important;
 }
 .top-left{
     top: 170px;
@@ -71,7 +72,8 @@ transform: rotate(.5turn);
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
-    opacity: 0;
+    /* opacity: 0; */
+    display: none !important;
     transition: all .3s ease-in;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
