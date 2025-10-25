@@ -17,18 +17,15 @@
 <body>
 
 
-    <!-- test somthing -->
-     <!-- test from main -->
-
-
+    
       <nav class="py-4 nav-bar position-sticky top-0">
         <div class="container d-flex flex-wrap  align-items-center justify-content-between">
 
           <div class="logo-nav">
-            <img class="img-fluid" src="./assets/src/main/images/logo.svg" alt="logo">
+            <img class="img-fluid w-100" src="./assets/src/main/images/logo.svg" alt="logo">
           </div>
 
-          <ul class="d-flex mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
+          <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
             <li><a href="./index.html">HOME PAGE</a></li>
             <li><a href="#">SHOP</a><i class="fa-solid fa-angle-down"></i>
                <div class="mega-menu">
@@ -59,7 +56,6 @@
                   <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
                     
 
-                     <!-- To Do: add sub link -->
                       <ul class="nested-mega-menu">
                         <li><a href="#">CHEF</a></li>
                         <li><a href="#">CHEF DETAILS</a></li>
@@ -68,7 +64,6 @@
                   </li>
                   <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
 
-                     <!-- To Do: add sub link -->
                         <ul class="nested-mega-menu">
                         <li><a href="#">FOOD MENU</a></li>
                       </ul>
@@ -85,13 +80,13 @@
             <li><a href="#">CONTACT</a></li>
           </ul>
 
-          <div class="nav-info d-flex align-items-center gap-4 flex-wrap">
+          <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
 
-            <div class="cart-notification cursor__pointer">
+            <div class="d-md-block d-none cart-notification cursor__pointer">
               <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
             </div>
 
-            <button class="main-btn py-lg-3 px-lg-4 p-sm-2">
+            <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
               CONTACT US
             </button>
 
@@ -106,7 +101,6 @@
         </div>
       </nav>
 
-      <!-- Stop here -->
 
       <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -118,7 +112,94 @@
         <div class="offcanvas-body">
               <div class="row g-3">
 
-                <div class="col-12">
+
+                <div class="col-12 d-lg-none d-block">
+
+                <div class="accordion border-0" id="accordionExample">
+                 <div class="accordion-item">
+                   <h2 class="accordion-header">
+                     <a class="accordion-button fw-medium collapsed remove-arrow" type="button">
+                       HOME  
+                     </a>
+                   </h2>
+                 </div>
+                 <div class="accordion-item">
+                   <h2 class="accordion-header">
+                     <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        SHOP <i class="far fa-plus fs-5 fw-bold"></i>
+                     </a>
+                   </h2>
+                   <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                     <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP GRID</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP LIST</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP SIDEBAR</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP SINGLE</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP CART</a></li>
+                        <li  ><a class="py-3 ps-3 d-block" href="#">CHECKOUT</a></li>
+                      </ul>
+                       
+                     </div>
+                   </div>
+                 </div>
+                 <div class="accordion-item">
+                   <h2 class="accordion-header">
+                     <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                       BLOG <i class="far fa-plus fs-5 fw-bold"></i>
+                     </a>
+                   </h2>
+                   <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                     <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">BLOG</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">BLOG DETAILS</a></li>
+                       
+                      </ul>
+                     </div>
+                   </div>
+                 </div>
+                   <div class="accordion-item">
+                   <h2 class="accordion-header">
+                     <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                       PAGES <i class="far fa-plus fs-5 fw-bold"></i>
+                     </a>
+                   </h2>
+                   <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                     <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">ABOUT US</a></li>
+                        <!-- to do : sub accordion -->
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">CHFE PAGE</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">FOOD MENU</a></li>
+                        <!-- to do : sub accordion -->
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">GALLARY</a></li>
+                        <li  ><a class="py-3 ps-3 border-bottom d-block" href="#">TESTIMONIALS</a></li>
+                        <li  ><a class="py-3 ps-3 d-block border-bottom" href="#">RESERVATION</a></li>
+                        <li  ><a class="py-3 ps-3 d-block border-bottom" href="#">FAQ'S</a></li>
+                        <li  ><a class="py-3 ps-3 d-block" href="#">404 PAGE</a></li>
+                      </ul>
+                     </div>
+                   </div>
+                 </div>
+
+                   <div class="accordion-item">
+                   <h2 class="accordion-header">
+                     <a class="accordion-button fw-medium remove-arrow collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                       CONTACT
+                     </a>
+                   </h2>
+                   
+                 </div>
+
+               </div>
+
+
+                  
+                   
+                </div>
+
+                <div class="col-12 d-lg-block d-none ">
       
                   <p class="text-secondary">This involves interactions between a business and its customers. It's about meeting customers' needs and resolving
                     their problems. Effective customer service is crucial.
@@ -126,9 +207,7 @@
                   
                 </div>
 
-                <!-- To Do :add nav link at lg screen -->
-
-                <div class="col-12">
+                <div class="col-12 d-lg-block d-none ">
                   <div class="row g-3">
                     <div class="col-12 gap-3 d-flex">
       

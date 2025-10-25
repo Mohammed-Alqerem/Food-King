@@ -363,5 +363,39 @@ color: white !important;
     border-color: #D12525;
 }
 
+/* offcanvas-nav */
 
 
+
+.offcanvas-nav li a{
+    color: black;
+    font-weight: 600;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+.offcanvas-nav li a:hover{
+    color: #D12525;
+}
+
+
+/* remove arrow*/
+
+.accordion-button::after{
+    background-image: url("") !important;
+    display: none;
+}
+
+
+.accordion{
+--bs-accordion-border-width:0;
+}
+
+.accordion-item{
+       border-bottom: 1px solid #ccc !important;
+
+}
