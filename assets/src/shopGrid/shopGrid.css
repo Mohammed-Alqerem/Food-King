@@ -284,6 +284,9 @@ transform: rotate(.5turn);
 .fix-card .catagory-btn-bar::before{
     top: 50.5%;
 }
+.gap-10{
+    gap: 37px;
+}
 /*end card*/
 @media (max-width:768px){
     .fs-70{
