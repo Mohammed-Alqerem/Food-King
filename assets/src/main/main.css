@@ -8,13 +8,13 @@ a {
 }
 
 
+
+
+/* custom classes */
+
 .sm-width {
     width: 40px;
 }
-
-
-
-/* main colors */
 
 .main-red-text {
     color: #d12525
@@ -24,14 +24,15 @@ a {
     background-color: #d12525;
 }
 
-/* cursor pointer */
 
 .cursor__pointer {
     cursor: pointer;
 }
 
 
-/* main colors */
+/* custom classes */
+
+
 
 
 /* start navbar */
@@ -113,7 +114,7 @@ a {
 
 
 
-/* nested mega menu */
+/* start nested mega menu */
 
 .mega-menu ul li {
     position: relative;
@@ -161,15 +162,14 @@ a {
 }
 
 
-
-
+/* start nested mega menu */
 
 
 /* end navbar */
 
 
 
-/* main btn */
+/*start main btn */
 
 .main-btn {
     background-color: #d12525;
@@ -213,11 +213,11 @@ a {
     height: 100%;
 }
 
-/* main btn */
+/* end main btn */
 
 
 
-/* bar-btn */
+/* start bar-btn */
 
 .bar-btn {
     position: relative;
@@ -273,11 +273,10 @@ a {
     bottom: 5px;
 }
 
+/* end bar-btn */
 
-/* bar-btn */
 
-
-/* cart-notification */
+/* start cart-notification */
 
 .cart-notification {
     position: relative;
@@ -303,12 +302,13 @@ a {
     -o-border-radius: 50%;
 }
 
-/* cart-notification */
+/* end cart-notification */
 
 
 
 
-/* offcanvas */
+/*start offcanvas */
+
 .offcanvas {
     border-left: #D12525 2px solid !important;
 }
@@ -325,9 +325,28 @@ a {
     color: white;
 }
 
+/* offcanvas-nav */
 
 
-/* offcanvas */
+
+.offcanvas-nav li a {
+    color: black;
+    font-weight: 600;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+.offcanvas-nav li a:hover {
+    color: #D12525;
+}
+
+
+
+/* end offcanvas */
 
 
 .social-icon {
@@ -365,24 +384,9 @@ a {
     border-color: #D12525;
 }
 
-/* offcanvas-nav */
 
 
-
-.offcanvas-nav li a {
-    color: black;
-    font-weight: 600;
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
-}
-
-
-.offcanvas-nav li a:hover {
-    color: #D12525;
-}
+/* edit accordion */
 
 
 /* remove arrow*/
@@ -401,3 +405,6 @@ a {
     border-bottom: 1px solid #ccc !important;
 
 }
+
+
+/* edit accordion */
