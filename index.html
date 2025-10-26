@@ -17,7 +17,7 @@
 <body>
 
 
-    
+    <!-- start navbar -->
       <nav class="py-4 nav-bar position-sticky top-0">
         <div class="container d-flex flex-wrap  align-items-center justify-content-between">
       
@@ -101,23 +101,32 @@
       
         </div>
       </nav>
+    <!-- end navbar -->
 
-
-      <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
+     <!-- start offcanvas -->
+     <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      
+      <!-- start header offcanvas -->
+      <div class="offcanvas-header">
+        
           <div class="image-holder w-75">
             <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
           </div>
           <i class="btn-close fa-solid fa-circle-xmark" style="color: #f00f3c; font-size: 40px;" type="button"
             data-bs-dismiss="offcanvas" aria-label="Close"></i>
         </div>
+       <!-- end header offcanvas -->
+
+
+       <!-- start offcanvas body -->
         <div class="offcanvas-body">
           <div class="row g-3">
       
-      
+              <!-- start accordion -->
             <div class="col-12 d-lg-none d-block">
-      
+    
               <div class="accordion border-0" id="accordionExample">
+
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <a class="accordion-button fw-medium collapsed remove-arrow" type="button">
@@ -236,7 +245,7 @@
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <a class="accordion-button fw-medium remove-arrow collapsed" type="button" data-bs-toggle="collapse"
@@ -246,13 +255,9 @@
                   </h2>
       
                 </div>
-      
               </div>
-      
-      
-      
-      
             </div>
+              <!-- start accordion -->
       
             <div class="col-12 d-lg-block d-none ">
       
@@ -324,7 +329,11 @@
           </div>
     
         </div>
+        <!-- end offcanvas body -->
+
       </div>
+     <!-- end offcanvas -->
+
 
 
 
