@@ -145,6 +145,9 @@ a {
     background-color: white !important;
 
 }
+.mega-menu ul li a{
+    background-color: white;
+}
 
 .mega-menu ul li .nested-mega-menu a {
     background-color: white !important;
