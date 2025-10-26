@@ -17,21 +17,18 @@
 <body>
 
 
-    <!-- test somthing -->
-     <!-- test from main -->
-
-
+    <!-- start navbar -->
       <nav class="py-4 nav-bar position-sticky top-0">
         <div class="container d-flex flex-wrap  align-items-center justify-content-between">
-
+      
           <div class="logo-nav">
-            <img class="img-fluid" src="./assets/src/main/images/logo.svg" alt="logo">
+            <img class="img-fluid w-100" src="./assets/src/main/images/logo.svg" alt="logo">
           </div>
-
-          <ul class="d-flex mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
+      
+          <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
             <li><a href="./index.html">HOME PAGE</a></li>
             <li><a href="#">SHOP</a><i class="fa-solid fa-angle-down"></i>
-               <div class="mega-menu">
+              <div class="mega-menu">
                 <ul class="ps-0">
                   <li><a href="#">SHOP GRID</a></li>
                   <li><a href="#">SHOP LIST</a></li>
@@ -41,30 +38,36 @@
                   <li><a href="#">CHECKOUT</a></li>
                 </ul>
               </div>
-            
+      
             </li>
             <li><a href="#">BLOG</a> <i class="fa-solid fa-angle-down"></i>
-               <div class="mega-menu">
+              <div class="mega-menu">
                 <ul class="ps-0">
                   <li><a href="#">BLOG</a></li>
                   <li><a href="#">BLOG DETAILS</a></li>
-                  
+      
                 </ul>
               </div>
             </li>
             <li><a href="#">PAGES</a> <i class="fa-solid fa-angle-down"></i>
               <div class="mega-menu">
-                <ul class="ps-0">
+                <ul class="ps-0 test">
                   <li><a href="#">ABOUT US</a></li>
-                  <li><a href="#">CHEF PAGE</a>
-
-                    <!-- STOP HERE -->
-                  
+                  <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
+      
+      
+                    <ul class="nested-mega-menu">
+                      <li><a href="#">CHEF</a></li>
+                      <li><a href="#">CHEF DETAILS</a></li>
+                    </ul>
+      
                   </li>
-                  <li><a href="#">FOOD MENU</a>
-
-                    <!-- STOP HERE -->
-                  
+                  <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
+      
+                    <ul class="nested-mega-menu">
+                      <li><a href="#">FOOD MENU</a></li>
+                    </ul>
+      
                   </li>
                   <li><a href="#">GALLARY</a></li>
                   <li><a href="#">TESTIMONIALS</a></li>
@@ -76,27 +79,261 @@
             </li>
             <li><a href="#">CONTACT</a></li>
           </ul>
-
-          <div class="nav-info d-flex align-items-center gap-4 flex-wrap">
-
-            <div class="cart-notification cursor__pointer">
+      
+          <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
+      
+            <div class="d-md-block d-none cart-notification cursor__pointer">
               <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
             </div>
-
-            <button class="main-btn py-lg-3 px-lg-4 p-sm-2">
+      
+            <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
               CONTACT US
             </button>
-
-            <button class="bar-btn">
+      
+            <button class="bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
               <span class="first"></span>
               <span class="second"></span>
               <span class="third"></span>
             </button>
-
+      
           </div>
-
+      
         </div>
       </nav>
+    <!-- end navbar -->
+
+     <!-- start offcanvas -->
+     <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      
+      <!-- start header offcanvas -->
+      <div class="offcanvas-header">
+        
+          <div class="image-holder w-75">
+            <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
+          </div>
+          <i class="btn-close fa-solid fa-circle-xmark" style="color: #f00f3c; font-size: 40px;" type="button"
+            data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+       <!-- end header offcanvas -->
+
+
+       <!-- start offcanvas body -->
+        <div class="offcanvas-body">
+          <div class="row g-3">
+      
+              <!-- start accordion -->
+            <div class="col-12 d-lg-none d-block">
+    
+              <div class="accordion border-0" id="accordionExample">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button fw-medium collapsed remove-arrow" type="button">
+                      HOME
+                    </a>
+                  </h2>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">
+                      SHOP <i class="far fa-plus fs-5 fw-bold"></i>
+                    </a>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP GRID</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP LIST</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP SIDEBAR</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP SINGLE</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">SHOP CART</a></li>
+                        <li><a class="py-3 ps-3 d-block" href="#">CHECKOUT</a></li>
+                      </ul>
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      BLOG <i class="far fa-plus fs-5 fw-bold"></i>
+                    </a>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">BLOG</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">BLOG DETAILS</a></li>
+      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button d-flex justify-content-between align-items-center fw-medium collapsed"
+                      type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                      aria-controls="collapseFour">
+                      PAGES <i class="far fa-plus fs-5 fw-bold"></i>
+                    </a>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                      <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">ABOUT US</a></li>
+                        <!-- to do : sub accordion -->
+                        <li>
+                          <div class="accordion" id="accordionExample2">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <a class="fw-medium accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseSubOne" aria-expanded="true" aria-controls="collapseSubOne">
+                                  CHEF PAGE <i class="ms-auto far fa-plus fs-5 fw-bold"></i>
+                                </a>
+                              </h2>
+                              <div id="collapseSubOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample2">
+                                <div class="accordion-body p-0 border-0">
+                                  <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                                    <li><a class="py-3 ps-3 border-bottom d-block" href="#">CHEF</a></li>
+                                    <li><a class="py-3 ps-3 border-bottom d-block" href="#">CHEF DETAILS</a></li>
+      
+                                  </ul>
+      
+                                </div>
+                              </div>
+                            </div>
+      
+                          </div>
+      
+                        </li>
+                        <li>
+      
+                          <div class="accordion" id="accordionExample3">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <a class="fw-medium accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#collapseSubTow" aria-expanded="true" aria-controls="collapseSubTow">
+                                  FOOD MENU <i class="ms-auto far fa-plus fs-5 fw-bold"></i>
+                                </a>
+                              </h2>
+                              <div id="collapseSubTow" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample3">
+                                <div class="accordion-body p-0 border-0">
+                                  <ul class="ps-0 w-100 d-flex flex-column offcanvas-nav ">
+                                    <li><a class="py-3 ps-3 border-bottom d-block" href="#">MENU FOOD</a></li>
+                                  </ul>
+      
+                                </div>
+                              </div>
+                            </div>
+      
+                          </div>
+                        </li>
+                        <!-- to do : sub accordion -->
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">GALLARY</a></li>
+                        <li><a class="py-3 ps-3 border-bottom d-block" href="#">TESTIMONIALS</a></li>
+                        <li><a class="py-3 ps-3 d-block border-bottom" href="#">RESERVATION</a></li>
+                        <li><a class="py-3 ps-3 d-block border-bottom" href="#">FAQ'S</a></li>
+                        <li><a class="py-3 ps-3 d-block" href="#">404 PAGE</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <a class="accordion-button fw-medium remove-arrow collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      CONTACT
+                    </a>
+                  </h2>
+      
+                </div>
+              </div>
+            </div>
+              <!-- start accordion -->
+      
+            <div class="col-12 d-lg-block d-none ">
+      
+              <p class="text-secondary">This involves interactions between a business and its customers. It's about meeting
+                customers' needs and resolving
+                their problems. Effective customer service is crucial.
+              </p>
+      
+            </div>
+      
+            <div class="col-12 d-lg-block d-none ">
+              <div class="row g-3">
+                <div class="col-12 gap-3 d-flex">
+      
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/01.webp" alt="food">
+                  </div>
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/02.webp" alt="food">
+                  </div>
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/03.webp" alt="food">
+                  </div>
+      
+                </div>
+                <div class="col-12 gap-3 d-flex">
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/04.webp" alt="food">
+                  </div>
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/05.webp" alt="food">
+                  </div>
+                  <div class="image-holder cursor__pointer">
+                    <img class="img-fluid rounded" src="./assets/src/main/images/06.webp" alt="food">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12">
+              <h5 class="fw-medium">
+                Contact Info
+              </h5>
+            </div>
+      
+            <div class="col-12">
+              <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i class="main-color fs-5 fa-solid fa-location-dot"
+                  ></i> Main Street, Melbourne, Australia</p>
+              <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i class="main-color fs-5 fa-solid fa-envelope"
+                  ></i> info@foodking.com</p>
+              <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i class="main-color fs-5 fa-regular fa-clock"
+                ></i> Mod-friday, 09am -05pm</p>
+              <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i class="main-color fs-5 fa-solid fa-phone-flip"
+                ></i> +11002345909</p>
+            </div>
+      
+            <div class="col-12">
+              <div class="cursor__pointer py-2 main-btn d-flex gap-3 align-items-center justify-content-center"> <i
+                  class="fa-solid fa-truck-fast" style="font-size: 18px;"></i> ORDER NOW</div>
+            </div>
+      
+            <div class="col-12 pt-3 pb-2">
+              <span class="social-icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="social-icon"><i class="fa-brands fa-twitter"></i></span>
+              <span class="social-icon"><i class="fa-brands fa-youtube"></i></span>
+              <span class="social-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+      
+          </div>
+    
+        </div>
+        <!-- end offcanvas body -->
+
+      </div>
+     <!-- end offcanvas -->
+
 
 
 
