@@ -465,7 +465,8 @@ a {
      -o-border-radius:7px ;
 }
 
-.food-menu .card-food:hover::before{
+.food-menu .card-food:hover::before,
+.food-menu .card-food.acitve::before{
     opacity: 1;
     height: 100%;
     background-image: url("./../shopGrid/images/catagory-card-shape.webp");
@@ -481,16 +482,24 @@ a {
     -o-transition: .5s;
 }
 
-.food-menu .card-food:hover .special-offer{
+button.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.food-menu .card-food:hover .special-offer,
+.food-menu .card-food.acitve .special-offer{
   
     background-color: white !important;
 }
 
-.food-menu .card-food:hover .special-price{
+.food-menu .card-food:hover .special-price,
+.food-menu .card-food.acitve .special-price{
     color: white !important ;
 }
 
-.food-menu .card-food:hover .starts{
+.food-menu .card-food:hover .starts,
+.food-menu .card-food.acitve .starts{
     color: white !important;
     transition-delay: .2s;
 }
@@ -513,7 +522,8 @@ a {
 }
 
 
-.food-menu  .heart-motion:hover{
+.food-menu  .heart-motion:hover,
+.food-menu .card-food.acitve .heart-motion{
  
     background-color: white;
     color: #f9b637;
