@@ -1,0 +1,59 @@
+
+
+/* start header */
+.header .carousel-inner{
+    background-image: url(./images/hero-bg.webp);
+    background-size: cover;
+    padding: 48px 0;
+
+}
+
+
+.header h1{
+    font-size: 100px;
+    width: 100%;
+
+}
+
+.header .offer{
+
+    position: absolute;
+    top: -125px;
+    left: -200px;
+}
+
+.header .chilli1{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+   
+.header .chilli2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .carousel-indicators button{
+    
+    width: 12px;
+    height: 12px;
+    border-radius: 50% ;
+    -webkit-border-radius: 50% ;
+    -moz-border-radius: 50% ;
+    -ms-border-radius: 50% ;
+    -o-border-radius: 50% ;
+}
+
+  
+
+@media screen and (max-width:576px) {
+
+    .header h1{
+        font-size: 50px;
+    }
+    
+}
+
+/* end header */
