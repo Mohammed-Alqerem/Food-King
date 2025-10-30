@@ -53,6 +53,21 @@
 /*  start popular-food */
 
 
+.popular-food{
+    background-color: #F4F1EA;
+    position: relative;
+}
+
+.popular-food .container h2{
+    font-size: 50px;
+}
+
+.popular-food > img{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
 .popular-food .food-card{
     background-image: url("./../shopGrid/images/catagory-card-shape.webp");
     background-size: cover;
@@ -63,30 +78,103 @@
     -o-transition: .4s;
 }
 
+.popular-food .food-card .food-card-image{
+    height:195px;
+}
+
 
 .popular-food .food-card .text{
    position: relative;
+}
+
+.popular-food .burger-food{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+    z-index: 1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.popular-food .food-card:hover .burger-food{
+    opacity: 1;
 }
 
 
 .popular-food .food-card .text::before{
     content: '';
     position: absolute;
-    top:0;
+    top: -10px;
     left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #d12525;
     transform:translate(-50%,-50%) ;
     -webkit-transform:translate(-50%,-50%) ;
     -moz-transform:translate(-50%,-50%) ;
     -ms-transform:translate(-50%,-50%) ;
     -o-transform:translate(-50%,-50%) ;
-    width: 50px;
-    height: 3px;
-    background-color: #d12525;
+    transition:.4s ;
+    -webkit-transition:.4s ;
+    -moz-transition:.4s ;
+    -ms-transition:.4s ;
+    -o-transition:.4s ;
+}
+
+.popular-food .food-card:hover .text::before{
+
+    background-color: white ;
+
+}
+
+
+.popular-food .leaf-one,
+.popular-food .leaf-two{
+    position: absolute;
+    opacity: 0;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.popular-food  .leaf-one{
+    top: -20px;
+    right: 100px;
+}
+
+.popular-food .leaf-two{
+    top: 100px;
+    left: 100px;
+}
+
+
+.popular-food .food-card:hover .leaf-one{
+    top: -20px;
+    right: 10px;
+    opacity: 1;
+}
+
+.popular-food .food-card:hover .leaf-two{
+    top: 100px;
+    left: -20px;
+    opacity: 1;
 }
 
 
 .popular-food .food-card .the-best{
     position: relative;
+}
+
+.popular-food .food-card span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 
@@ -117,7 +205,7 @@
 .popular-food .food-card:hover{
 
     background-position:0 -50px;
-
+     background-color: #f9b637 !important;
     /* stop here */
 
 }
