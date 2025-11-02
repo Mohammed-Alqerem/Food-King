@@ -225,24 +225,96 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* end popular-food */
 
+
+
+/* start offers */
+
+  .offers .offer-content-burger{
+    background-image: url(./../home/images/offer-bg.webp);
+    background-size: cover;
+    background-position: 0 -90px;
+  }
+
+   .offers .offer-content-burger .image-holder img{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+
+    .offers .offer-content-burger:hover .image-holder img{
+        transform:scale(1.3) ;
+        -webkit-transform:scale(1.3) ;
+        -moz-transform:scale(1.3) ;
+        -ms-transform:scale(1.3) ;
+        -o-transform:scale(1.3) ;
+}
+
+.offers .offer-content-burger .burger-text{
+     position: absolute;
+     top: 20px;
+     left: 40%;
+     transform: translate(-40%,-40%);
+     -webkit-transform: translate(-40%,-40%);
+     -moz-transform: translate(-40%,-40%);
+     -ms-transform: translate(-40%,-40%);
+     -o-transform: translate(-40%,-40%);
+     animation:skey 10s infinite forwards;
+     -webkit-animation:skey 10s infinite alternate;
+}
+
+@keyframes skey {
+
+    0% {
+            transform: rotate(15deg);
+        }
+    
+        50% {
+            transform: rotate(-15deg);
+        }
+    
+        100% {
+            transform: rotate(15deg);
+        }
+}
+
+
+.offers .offer-content-burger .offer-50{
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    animation:scaling 10s infinite forwards;
+    -webkit-animation:scaling 10s infinite forwards;
+}
+
+
+@keyframes scaling {
+
+      0%,100%{
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+        -moz-transform: scale(.6);
+        -ms-transform: scale(.6);
+        -o-transform: scale(.6);
+}
+
+    50%{
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+}
+
+
+    
+}
+
+/* end offers */
 
 
 
