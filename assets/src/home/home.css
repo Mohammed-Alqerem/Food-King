@@ -234,7 +234,8 @@
   .offers .offer-content-burger{
     background-image: url(./../home/images/offer-bg.webp);
     background-size: cover;
-    background-position: 0 -90px;
+    background-position: 0px;
+    padding: 85px 0 !important;
   }
 
    .offers .offer-content-burger .image-holder img{
@@ -314,6 +315,29 @@
     
 }
 
+
+ .offers .offer-content-pizza{
+
+    background-image: url(./../home/images/pizza-bg.webp);
+    background-size: cover;
+ }
+
+   .offers .offer-content-pizza .image-holder img{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+  .offers .offer-content-pizza:hover .image-holder img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
 /* end offers */
 
 
@@ -324,6 +348,10 @@
 
     .header h1{
         font-size: 50px;
+    }
+
+    .offers .offer-content-burger{
+        padding: 30px 0 !important;
     }
     
 }
