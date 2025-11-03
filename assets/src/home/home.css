@@ -242,6 +242,13 @@
     left:70px;
   }
 
+  .offers > img:nth-child(2){
+    position: absolute;
+    left: 0;
+    top: 80px;
+
+  }
+
   .offers .offer-content-burger{
     background-image: url(./../home/images/offer-bg.webp);
     background-size: cover;
