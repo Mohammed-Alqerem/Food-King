@@ -231,6 +231,17 @@
 
 /* start offers */
 
+  .offers{
+    background-color:#F4F1EA;
+     position: relative;
+  }
+
+  .offers > img{
+    position: absolute;
+    top: -50px;
+    left:70px;
+  }
+
   .offers .offer-content-burger{
     background-image: url(./../home/images/offer-bg.webp);
     background-size: cover;
