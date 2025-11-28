@@ -447,6 +447,24 @@
 /* end drill offer */
 
 
+/* start main-food-menu */
+
+.main-food-menu .text-title p{
+
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.main-food-menu .text-title h2{
+    font-size: 50px;
+    
+}
+
+/* end  main-food-menu */
+
+
   
 
 @media screen and (max-width:576px) {
