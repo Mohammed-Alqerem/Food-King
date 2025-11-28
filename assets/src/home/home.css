@@ -358,6 +358,93 @@
 
 /* end offers */
 
+/* start drill offer */
+
+.drille-offer{
+    background-image: url(./images/main-bg.jpg);
+    
+}
+
+.drille-offer .text{
+    font-size: 40px;
+}
+
+.drille-offer .text h4{
+    font-size: 50px;
+}
+
+.drille-offer .patato{
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    z-index: -1;
+}
+
+.drille-offer .tomato{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.drille-offer .offer-drille{
+    position: absolute;
+    left: 0;
+    top: 20%;
+    animation: up-down 3s forwards infinite;
+    -webkit-animation: up-down 5s alternate infinite;
+}
+
+.drille-offer .spicy{
+    position: absolute;
+    left: 80%;
+    top: 0;
+    animation: rotat 10s forwards infinite;
+    -webkit-animation: rotat 10s alternate infinite;
+}
+
+.drille-offer .pizza{
+      position: absolute;
+      left: 40%;
+      top: 60%;
+      transform: translate(-40%,-60%);
+      animation:skey 10s infinite forwards;
+      -webkit-animation:skey 10s infinite alternate;
+      -webkit-transform: translate(-40%,-60%);
+      -moz-transform: translate(-40%,-60%);
+      -ms-transform: translate(-40%,-60%);
+      -o-transform: translate(-40%,-60%);
+}
+
+@keyframes  rotat {
+
+      0%{
+      transform: rotate(1turn);
+      -webkit-transform: rotate(1turn);
+      -moz-transform: rotate(1turn);
+      -ms-transform: rotate(1turn);
+      -o-transform: rotate(1turn);
+}
+
+}
+
+
+@keyframes  up-down {
+
+      0%{
+       top: 0;
+}
+  50%{
+    top: 20px;
+  }
+
+    100%{
+       top: 0px;
+}
+}
+
+
+/* end drill offer */
 
 
   
