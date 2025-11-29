@@ -465,6 +465,55 @@
 /* end  main-food-menu */
 
 
+/* start trending-food */
+
+.trending-food .box-offer div{
+    
+    background-color: #F4F1EA;
+}
+
+.trending-food .left-back{
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.trending-food .drinks{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+
+.trending-food .right-back{
+    background-image: url(./images/comboo-bg.jpg);
+    background-size: cover;
+
+}
+
+.trending-food .combo-pizza{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    animation:skey 10s infinite forwards;
+      -webkit-animation:skey 10s infinite alternate;
+}
+
+.trending-food .offer-trending-photo{
+    position: absolute;
+    top: 20px;
+    right: 80px;
+     animation:scaling 10s infinite forwards;
+    -webkit-animation:scaling 10s infinite forwards;
+
+
+}
+
+
+/* end trending-food */
+
+
+
   
 
 @media screen and (max-width:576px) {
