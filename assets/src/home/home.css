@@ -514,6 +514,20 @@
 
 
 
+
+
+/* start info trending */
+
+.trending-info-back{
+    background-image: url(./images/food-shape-2.png);
+     background-color: #212121
+
+
+}
+
+/* end info trending */
+
+
   
 
 @media screen and (max-width:576px) {
