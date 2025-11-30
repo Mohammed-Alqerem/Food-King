@@ -527,7 +527,49 @@
 
 /* end info trending */
 
+/* start about-our-food */
 
+.about-our-food .burger-text-about-food{
+    position: absolute;
+    top: 0;
+    left: 0;
+     animation:skey 10s infinite forwards;
+      -webkit-animation:skey 10s infinite alternate;
+
+}
+
+.about-our-food .since-time{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+    padding: 20px 30px;
+    background-color: #f9b637;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+}
+
+.about-our-food .price-burger{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+/*end about-our-food */
   
 
 @media screen and (max-width:576px) {
