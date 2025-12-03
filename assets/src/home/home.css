@@ -569,6 +569,81 @@
 }
 
 
+/* start holder-back-left  */
+
+ .today-special .holder-back-left{
+    
+    background-image: url(./images/burger-bg.png);
+    background-size: cover;
+    background-position: center;
+
+ }
+
+  .today-special .holder-back-left:hover .image-holder img{
+     transform: scale(1.2);
+     -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+     -ms-transform: scale(1.2);
+     -o-transform: scale(1.2);
+}
+
+  .today-special .holder-back-left .image-holder img{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+ .today-special .pizza-today{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    
+ }
+
+ .today-special .burger-today{
+      position: absolute;
+      top: 30%;
+      left: 40%;
+      transform: translate(-50%,-50%);
+      animation:skey 10s infinite forwards;
+      -webkit-animation:skey 10s infinite forwards;
+      width: 100px;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+}
+
+
+.today-special .holder-back-right{
+    background-image: url(./images/pepsi-bg.png);
+     background-size: cover;
+    background-position: center;    
+}
+
+
+.today-special .holder-back-right .image-holder img{
+   width:300px;
+   transition: .4s;
+   -webkit-transition: .4s;
+   -moz-transition: .4s;
+   -ms-transition: .4s;
+   -o-transition: .4s;
+}
+
+.today-special .holder-back-right:hover .image-holder img{
+  transform:  translateX(-40px) scale(1.4);
+  -webkit-transform:  translateX(-40px) scale(1.4);
+  -moz-transform:  translateX(-40px) scale(1.4);
+  -ms-transform:  translateX(-40px) scale(1.4);
+  -o-transform:  translateX(-40px) scale(1.4);
+}
+
+/* end holder-back-left  */
+
+
 /*end about-our-food */
   
 
