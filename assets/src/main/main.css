@@ -33,6 +33,14 @@ a {
     padding:100px 0;
 }
 
+.large-text{
+    font-size: 60px;
+}
+
+
+.mid-text{
+    font-size: 45px;
+}
 
 /* custom classes */
 
