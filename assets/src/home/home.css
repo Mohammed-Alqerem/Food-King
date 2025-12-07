@@ -647,6 +647,54 @@
 /*end about-our-food */
   
 
+/* start offer-time */
+
+.offer-time .back-left-kfc{
+
+    background-image: url(./images/kfc-bg.png);
+    background-size: cover;
+
+
+}
+
+
+.offer-time .back-right-kfc{
+
+    background-image: url(./images/bg-white-kfc.jpg);
+    background-size: cover;
+
+
+}
+
+.offer-time .back-left-kfc img{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.offer-time .back-left-kfc:hover img{
+    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    -o-transform: translateX(-40px);
+}
+
+
+.offer-time .offer-time-50persent{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    animation:skey 10s infinite forwards;
+      -webkit-animation:skey 10s infinite forwards;
+}
+
+/* end offer-time */
+
+
+
 @media screen and (max-width:576px) {
 
     .header h1{
