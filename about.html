@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food King - About Us</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- home css -->
+    <link rel="stylesheet" href="./assets/src/home/home.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/src/main/main.css">
+    <style>
+        .team-card .image-holder img {
+            transition: all 0.5s ease;
+        }
+
+        .team-card:hover .image-holder img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start navbar -->
+    <nav class="py-4 nav-bar position-sticky top-0 bg-white shadow-sm">
+        <div class="container d-flex flex-wrap  align-items-center justify-content-between">
+
+            <div class="logo-nav">
+                <a href="./index.html"><img class="img-fluid w-100" src="./assets/src/main/images/logo.svg"
+                        alt="logo"></a>
+            </div>
+
+            <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
+                <li><a href="./index.html">HOME PAGE</a></li>
+                <li><a href="./shopGrid.html">SHOP</a><i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="./shopGrid.html">SHOP GRID</a></li>
+                            <li><a href="#">SHOP LIST</a></li>
+                            <li><a href="#">SHOP SIDEBAR</a></li>
+                            <li><a href="#">SHOP SINGLE</a></li>
+                            <li><a href="#">SHOP CART</a></li>
+                            <li><a href="#">CHECKOUT</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="#">BLOG</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">BLOG DETAILS</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">PAGES</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0 test">
+                            <li><a href="./about.html" class="active text-danger">ABOUT US</a></li>
+                            <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">CHEF</a></li>
+                                    <li><a href="#">CHEF DETAILS</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">FOOD MENU</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">GALLARY</a></li>
+                            <li><a href="#">TESTIMONIALS</a></li>
+                            <li><a href="#">RESERVATION</a></li>
+                            <li><a href="#">FAQ'S</a></li>
+                            <li><a href="#">404 PAGE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
+
+                <div class="d-md-block d-none cart-notification cursor__pointer">
+                    <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
+                </div>
+
+                <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
+                    CONTACT US
+                </button>
+
+                <button class="bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start offcanvas -->
+    <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+        <!-- start header offcanvas -->
+        <div class="offcanvas-header">
+
+            <div class="image-holder w-75">
+                <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
+            </div>
+            <i class="btn-close fa-solid fa-circle-xmark" style="color: #f00f3c; font-size: 40px;" type="button"
+                data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+        <!-- end header offcanvas -->
+
+
+        <!-- start offcanvas body -->
+        <div class="offcanvas-body">
+            <div class="row g-3">
+                <!-- Content same as index, just simplified for brevity here as it's a new file -->
+                <!-- start accordion -->
+                <div class="col-12 d-lg-none d-block">
+
+                    <div class="accordion border-0" id="accordionExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./index.html" class="accordion-button fw-medium collapsed remove-arrow"
+                                    type="button">
+                                    HOME
+                                </a>
+                            </h2>
+                        </div>
+                        <!-- ... Shops ... -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./about.html"
+                                    class="accordion-button fw-medium remove-arrow collapsed text-danger" type="button">
+                                    ABOUT US
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./contact.html" class="accordion-button fw-medium remove-arrow collapsed"
+                                    type="button">
+                                    CONTACT
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- end accordion -->
+                <div class="col-12">
+                    <h5 class="fw-medium">Contact Info</h5>
+                </div>
+                <div class="col-12">
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-location-dot"></i> Main Street, Melbourne, Australia</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-envelope"></i> info@foodking.com</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-regular fa-clock"></i> Mod-friday, 09am -05pm</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-phone-flip"></i> +11002345909</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- end offcanvas body -->
+    </div>
+    <!-- end offcanvas -->
+
+    <!-- Start Breadcrumb/Hero -->
+    <section class="page-banner bg-light py-5 text-center position-relative overflow-hidden">
+        <div class="container py-5 position-relative z-2">
+            <h1 class="text-black fw-bold display-4 text-uppercase">About Us</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            class="text-decoration-none text-danger fw-medium">Home</a></li>
+                    <li class="breadcrumb-item active text-secondary" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- End Breadcrumb/Hero -->
+
+    <!-- start about-our-food (Reused from Home) -->
+    <section class="about-our-food py-5">
+        <div class="container">
+            <div class="row g-3 flex-lg-row align-items-center flex-column-reverse">
+                <div class="col-lg-6 col-12 position-relative">
+                    <div class="image-holder">
+                        <img class="img-fluid w-100" src="./assets/src/home/images/burger22.png" alt="burger">
+                        <img class="d-md-block d-none burger-text-about-food"
+                            src="./assets/src/home/images/burger-text.webp" alt="burger-text">
+                        <p class=" d-md-block d-none since-time">since /1985</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-12 d-flex flex-column align-items-start ">
+                    <p class="text-uppercase fw-bold text-danger">about our food</p>
+                    <h4 class="text-uppercase fw-bold fs-1">Where Quality Meet Excellent <span
+                            class="text-danger">Service.</span></h4>
+                    <p class="text-secondary">It's the perfect dining experience where every dish is crafted with fresh,
+                        high-quality Experience quick and efficient service that ensures your food is servead fresh It's
+                        the dining experience where every dish is crafted with fresh, high-quality ingredients</p>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="d-flex align-items-start justify-content-center gap-2">
+                                    <i class="fa-solid fa-bowl-food" style="font-size:50px; color:#d7350c;"></i>
+                                    <div>
+                                        <h5 class="fw-bold text-uppercase">super quality food</h5>
+                                        <p>A team of dreamers and doers build unique interactive music</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="d-flex align-items-start justify-content-center gap-2">
+                                    <i class="fa-solid fa-motorcycle" style="font-size:50px; color:#d7350c;"></i>
+                                    <div>
+                                        <h5 class="fw-bold text-uppercase">Fast Delivery</h5>
+                                        <p>A team of dreamers and doers build unique interactive music</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex gap-3 flex-wrap">
+                        <div class=" text-uppercase fw-bold">
+                            <h6 class="text-danger">BRENDON GARREY</h6>
+                            <p>Customer’s experience is our highest priority.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ebd about-our-food -->
+
+    <!-- Start Team/Chef Section -->
+    <section class="team-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <p class="text-danger fw-bold text-uppercase">Professional Chefs</p>
+                <h2 class="fw-bold text-uppercase">Meet Our Expert Chefs</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="team-card bg-white rounded-4 overflow-hidden text-center hover-shadow transition h-100">
+                        <div class="image-holder overflow-hidden position-relative">
+                            <img src="./assets/src/home/images/01.webp" class="img-fluid w-100" alt="Chef">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Mane Gibson</h5>
+                            <p class="text-secondary mb-3">Head Chef</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="team-card bg-white rounded-4 overflow-hidden text-center hover-shadow transition h-100">
+                        <div class="image-holder overflow-hidden position-relative">
+                            <img src="./assets/src/home/images/02.webp" class="img-fluid w-100" alt="Chef">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Dovid Miler</h5>
+                            <p class="text-secondary mb-3">Assistant Chef</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="team-card bg-white rounded-4 overflow-hidden text-center hover-shadow transition h-100">
+                        <div class="image-holder overflow-hidden position-relative">
+                            <img src="./assets/src/home/images/03.webp" class="img-fluid w-100" alt="Chef">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Ketty Roody</h5>
+                            <p class="text-secondary mb-3">Main Cook</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="team-card bg-white rounded-4 overflow-hidden text-center hover-shadow transition h-100">
+                        <div class="image-holder overflow-hidden position-relative">
+                            <img src="./assets/src/home/images/04.webp" class="img-fluid w-100" alt="Chef">
+                        </div>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-1">Jhon Doe</h5>
+                            <p class="text-secondary mb-3">Cook</p>
+                            <div class="social-links d-flex justify-content-center gap-3">
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="text-secondary hover-text-danger"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team/Chef Section -->
+
+
+    <!-- start footer -->
+    <footer class="footer bg-black text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="logo-footer mb-4">
+                        <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
+                    </div>
+                    <p class="text-secondary">FoodKing is the best place to find the most delicious fast food with
+                        excellent service.</p>
+                    <div class="social-icons d-flex gap-3 mt-4">
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
+                        <li><a href="./index.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Home</a></li>
+                        <li><a href="./about.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">About Us</a>
+                        </li>
+                        <li><a href="./shopGrid.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Shop</a></li>
+                        <li><a href="#"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Blog</a></li>
+                        <li><a href="./contact.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Contact Us</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">Main Street, Melbourne, Australia</span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-envelope text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">info@foodking.com</span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-phone-flip text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">+1 100 234 5678</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Newsletter</h4>
+                    <p class="text-secondary">Subscribe to our newsletter to get the latest updates and offers.</p>
+                    <form class="mt-3 position-relative">
+                        <input type="email" class="form-control rounded-pill py-3 px-4 bg-dark text-white border-0"
+                            placeholder="Your Email">
+                        <button type="submit"
+                            class="btn bg-danger text-white rounded-circle position-absolute top-50 end-0 translate-middle-y me-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary mb-0">&copy; 2024 <span class="text-danger fw-bold">FoodKing</span>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-secondary mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

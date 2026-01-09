@@ -33,6 +33,14 @@ a {
     padding:100px 0;
 }
 
+.large-text{
+    font-size: 60px;
+}
+
+
+.mid-text{
+    font-size: 45px;
+}
 
 /* custom classes */
 
@@ -218,8 +226,8 @@ a {
 }
 
 .main-btn:hover::before {
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
 }
 
 /* end main btn */
