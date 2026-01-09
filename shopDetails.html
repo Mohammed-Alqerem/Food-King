@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food King - Shop Details</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- home css -->
+    <link rel="stylesheet" href="./assets/src/home/home.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/src/main/main.css">
+</head>
+
+<body>
+
+    <!-- start navbar -->
+    <nav class="py-4 nav-bar position-sticky top-0 bg-white shadow-sm">
+        <div class="container d-flex flex-wrap  align-items-center justify-content-between">
+
+            <div class="logo-nav">
+                <a href="./index.html"><img class="img-fluid w-100" src="./assets/src/main/images/logo.svg"
+                        alt="logo"></a>
+            </div>
+
+            <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
+                <li><a href="./index.html">HOME PAGE</a></li>
+                <li><a href="./shopGrid.html" class="active text-danger">SHOP</a><i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="./shopGrid.html">SHOP GRID</a></li>
+                            <li><a href="#">SHOP LIST</a></li>
+                            <li><a href="#">SHOP SIDEBAR</a></li>
+                            <li><a href="./shopDetails.html">SHOP SINGLE</a></li>
+                            <li><a href="#">SHOP CART</a></li>
+                            <li><a href="#">CHECKOUT</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="#">BLOG</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">BLOG DETAILS</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">PAGES</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0 test">
+                            <li><a href="./about.html">ABOUT US</a></li>
+                            <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">CHEF</a></li>
+                                    <li><a href="#">CHEF DETAILS</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">FOOD MENU</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">GALLARY</a></li>
+                            <li><a href="#">TESTIMONIALS</a></li>
+                            <li><a href="#">RESERVATION</a></li>
+                            <li><a href="#">FAQ'S</a></li>
+                            <li><a href="#">404 PAGE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+
+            <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
+
+                <div class="d-md-block d-none cart-notification cursor__pointer">
+                    <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
+                </div>
+
+                <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
+                    CONTACT US
+                </button>
+
+                <button class="bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start offcanvas -->
+    <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <!-- Reused offcanvas structure -->
+        <div class="offcanvas-header">
+            <div class="image-holder w-75">
+                <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
+            </div>
+            <i class="btn-close fa-solid fa-circle-xmark" style="color: #f00f3c; font-size: 40px;" type="button"
+                data-bs-dismiss="offcanvas" aria-label="Close"></i>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="row g-3">
+                <div class="col-12 d-lg-none d-block">
+                    <div class="accordion border-0" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./index.html" class="accordion-button fw-medium collapsed remove-arrow"
+                                    type="button">
+                                    HOME
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./about.html" class="accordion-button fw-medium remove-arrow collapsed"
+                                    type="button">
+                                    ABOUT US
+                                </a>
+                            </h2>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <a href="./contact.html" class="accordion-button fw-medium remove-arrow collapsed"
+                                    type="button">
+                                    CONTACT
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ... offcanvas extras ... -->
+                <div class="col-12">
+                    <h5 class="fw-medium">Contact Info</h5>
+                </div>
+                <div class="col-12">
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-location-dot"></i> Main Street, Melbourne, Australia</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-envelope"></i> info@foodking.com</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-regular fa-clock"></i> Mod-friday, 09am -05pm</p>
+                    <p class="fw-medium d-flex gap-3 align-items-center text-uppercase"><i
+                            class="main-color fs-5 fa-solid fa-phone-flip"></i> +11002345909</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end offcanvas -->
+
+    <!-- Start Breadcrumb/Hero -->
+    <section class="page-banner bg-light py-5 text-center position-relative overflow-hidden">
+        <div class="container py-5 position-relative z-2">
+            <h1 class="text-black fw-bold display-4 text-uppercase">Shop Details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="./index.html"
+                            class="text-decoration-none text-danger fw-medium">Home</a></li>
+                    <li class="breadcrumb-item"><a href="./shopGrid.html"
+                            class="text-decoration-none text-danger fw-medium">Shop</a></li>
+                    <li class="breadcrumb-item active text-secondary" aria-current="page">Shop Details</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- End Breadcrumb/Hero -->
+
+    <!-- Start Product Details -->
+    <section class="product-details py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Product Image -->
+                <div class="col-lg-6">
+                    <div class="product-image-slider border rounded-4 bg-white p-4 text-center sticky-top"
+                        style="top: 100px;">
+                        <img src="./assets/src/shopGrid/images/burger-2.webp"
+                            class="img-fluid w-75 position-relative z-2" alt="Product">
+                        <!-- Decorative Shape reuse -->
+                        <img class="img-fluid position-absolute start-0 bottom-0 z-1" style="opacity:0.5;"
+                            src="./assets/src/home/images/burger-shape.png" alt="shape">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="col-lg-6">
+                    <div class="product-info-content">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <span class="badge bg-danger px-3 py-2 rounded-pill">In Stock</span>
+                            <div class="starts text-warning">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star text-secondary"></i>
+                                <span class="text-secondary small ms-2">(4 Reviews)</span>
+                            </div>
+                        </div>
+                        <h2 class="fw-bold mb-3 display-6">Delicious Beef Burger</h2>
+                        <div class="prices mb-4">
+                            <span class="text-danger fw-bold fs-2">$18.00</span>
+                            <span class="text-secondary text-decoration-line-through fs-5 ms-3">$25.00</span>
+                        </div>
+                        <p class="text-secondary mb-4 lh-lg">
+                            Our famous beef burger needs no introduction. Made with premium quality beef patty, fresh
+                            lettuce, tomatoes, and our secret special sauce. Served with a side of crispy french fries.
+                            Perfect for a quick lunch or dinner.
+                        </p>
+
+                        <div class="d-flex align-items-center gap-4 mb-4 pb-4 border-bottom">
+                            <div class="quantity-control d-flex align-items-center border rounded-pill px-3 py-2"
+                                style="width: 140px;">
+                                <button class="btn border-0 py-0 text-secondary"><i
+                                        class="fa-solid fa-minus"></i></button>
+                                <input type="number" class="form-control border-0 text-center fw-bold text-black"
+                                    value="1" style="width: 50px;">
+                                <button class="btn border-0 py-0 text-secondary"><i
+                                        class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <button class="main-btn py-3 px-5 rounded-pill flex-grow-1 fw-bold text-uppercase">Add To
+                                Cart</button>
+                        </div>
+
+                        <div class="product-meta d-flex flex-column gap-2 text-secondary">
+                            <span><strong class="text-black">SKU:</strong> BK-001</span>
+                            <span><strong class="text-black">Category:</strong> Fast Food, Burgers</span>
+                            <span><strong class="text-black">Tags:</strong> Healthy, Organic, Beef</span>
+                        </div>
+
+                        <div class="social-share d-flex align-items-center gap-3 mt-4">
+                            <span class="fw-bold text-black">Share:</span>
+                            <a href="#"
+                                class="social-icon bg-light text-secondary d-flex align-items-center justify-content-center rounded-circle"
+                                style="width: 35px; height: 35px;"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"
+                                class="social-icon bg-light text-secondary d-flex align-items-center justify-content-center rounded-circle"
+                                style="width: 35px; height: 35px;"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"
+                                class="social-icon bg-light text-secondary d-flex align-items-center justify-content-center rounded-circle"
+                                style="width: 35px; height: 35px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description/Reviews Tabs -->
+            <div class="row mt-5 pt-5">
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-4 justify-content-center gap-4" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-pill px-5 py-2 fw-bold text-uppercase border"
+                                id="pills-desc-tab" data-bs-toggle="pill" data-bs-target="#pills-desc" type="button"
+                                role="tab" aria-controls="pills-desc" aria-selected="true">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-5 py-2 fw-bold text-uppercase border"
+                                id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews"
+                                type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">Reviews
+                                (2)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Description Content -->
+                        <div class="tab-pane fade show active" id="pills-desc" role="tabpanel"
+                            aria-labelledby="pills-desc-tab">
+                            <div class="bg-light p-5 rounded-4 border">
+                                <p class="text-secondary lh-lg mb-0">
+                                    Experience the ultimate taste sensation with our flagship Beef Burger. We source
+                                    only the finest, grass-fed beef to create a patty that is juicy, flavorful, and
+                                    cooked to perfection. Our buns are baked fresh daily, providing the perfect soft yet
+                                    sturdy vessel for the ingredients. Topped with locally sourced, crisp lettuce, ripe
+                                    tomatoes, and red onions, every bite delivers a crunch of freshness. The experience
+                                    is elevated by our house-made special sauce—a tangy, creamy delight that complements
+                                    the savory beef perfectly. Whether you're a devoted burger enthusiast or just
+                                    looking for a satisfying meal, this burger promises to deliver quality and taste in
+                                    every bite.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Reviews Content -->
+                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
+                            aria-labelledby="pills-reviews-tab">
+                            <div class="bg-light p-5 rounded-4 border">
+                                <!-- Review Item -->
+                                <div class="d-flex gap-4 mb-4 border-bottom pb-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="./assets/src/home/images/01.webp" class="rounded-circle"
+                                            style="width: 60px; height: 60px; object-fit: cover;" alt="User">
+                                    </div>
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-1">
+                                            <h6 class="fw-bold mb-0">John Doe</h6>
+                                            <span class="text-secondary small">- Jan 01, 2024</span>
+                                        </div>
+                                        <div class="starts text-warning mb-2 fs-6">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="text-secondary mb-0">Amazing burger! The beef was so juicy and the
+                                            sauce is incredible. Highly recommended.</p>
+                                    </div>
+                                </div>
+                                <!-- Review Item -->
+                                <div class="d-flex gap-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="./assets/src/home/images/02.webp" class="rounded-circle"
+                                            style="width: 60px; height: 60px; object-fit: cover;" alt="User">
+                                    </div>
+                                    <div>
+                                        <div class="d-flex align-items-center gap-2 mb-1">
+                                            <h6 class="fw-bold mb-0">Sarah Smith</h6>
+                                            <span class="text-secondary small">- Feb 14, 2024</span>
+                                        </div>
+                                        <div class="starts text-warning mb-2 fs-6">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="text-secondary mb-0">Really good, but a bit too spicy for me. Still
+                                            worth checking out if you like heat!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product Details -->
+
+    <!-- Related Products (Reusing card structure) -->
+    <section class="related-products py-5 mb-5">
+        <div class="container">
+            <h3 class="fw-bold mb-5 text-uppercase">Related Products</h3>
+            <div class="row g-4">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12 ">
+                    <div
+                        class="card-food text-center p-2  d-flex gap-4 flex-column align-items-center bg-white rounded-4 border hover-shadow transition">
+                        <span class="heart-motion rounded ms-auto p-2" style="cursor: pointer;"><i
+                                class="fa-regular fa-heart"></i></span>
+                        <div class="image-holder pt-2">
+                            <img class="img-fluid" src="./assets/src/shopGrid/images/french-fry-4.webp" alt="beef-ruti">
+                        </div>
+                        <div class="text d-flex gap-2 flex-column align-items-center w-100 px-3 pb-3">
+                            <h5 class="text-capitalize fw-bold"><a href="#"
+                                    class="text-decoration-none text-black">French Fries</a></h5>
+                            <div class="prices">
+                                <span class="text-danger fw-bold">$10.50</span>
+                            </div>
+                            <button class="d-block w-100 btn-card-food main-btn bg-black py-2 rounded-5 fs-6 mt-2"><i
+                                    class="fa-solid fa-basket-shopping text-white"></i> Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional related items can go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- start footer -->
+    <footer class="footer bg-black text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Logo & Social -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="logo-footer mb-4">
+                        <img class="img-fluid w-50" src="./assets/src/main/images/logo.svg" alt="logo">
+                    </div>
+                    <p class="text-secondary">FoodKing is the best place to find the most delicious fast food with
+                        excellent service.</p>
+                    <div class="social-icons d-flex gap-3 mt-4">
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="text-white bg-danger rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Quick Links</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-secondary">
+                        <li><a href="./index.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Home</a></li>
+                        <li><a href="./about.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">About Us</a>
+                        </li>
+                        <li><a href="./shopGrid.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Shop</a></li>
+                        <li><a href="#"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Blog</a></li>
+                        <li><a href="./contact.html"
+                                class="text-decoration-none text-secondary hover-text-danger transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Contact Us</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">Main Street, Melbourne, Australia</span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-envelope text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">info@foodking.com</span>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-phone-flip text-danger mt-1 fs-5"></i>
+                            <span class="text-secondary">+1 100 234 5678</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h4 class="fw-bold mb-4 text-uppercase">Newsletter</h4>
+                    <p class="text-secondary">Subscribe to our newsletter to get the latest updates and offers.</p>
+                    <form class="mt-3 position-relative">
+                        <input type="email" class="form-control rounded-pill py-3 px-4 bg-dark text-white border-0"
+                            placeholder="Your Email">
+                        <button type="submit"
+                            class="btn bg-danger text-white rounded-circle position-absolute top-50 end-0 translate-middle-y me-2 d-flex align-items-center justify-content-center"
+                            style="width: 40px; height: 40px;"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-secondary mb-0">&copy; 2024 <span class="text-danger fw-bold">FoodKing</span>. All
+                        Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="text-secondary mb-0">Designed by Antigravity</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
