@@ -22,8 +22,7 @@ The project focuses on delivering a clean, modern, and fully responsive user int
 ## 🚀 Live Demo
 
 🔗 **Live Preview:**  
-https://mohammed-alqerem.github.io/Food-King/
-
+stalwart-scone-d21778.netlify.app/
 ## 📦 Installation & Usage
 
 1. Clone the repository:
