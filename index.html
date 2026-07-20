@@ -22,91 +22,92 @@
 <body>
 
 
-  <!-- start navbar -->
-  <nav class="py-4 nav-bar position-sticky top-0">
-    <div class="container d-flex flex-wrap  align-items-center justify-content-between">
+ 
+    <!-- start navbar -->
+    <nav class="py-4 nav-bar position-sticky top-0 bg-white shadow-sm">
+        <div class="container d-flex flex-wrap  align-items-center justify-content-between">
 
-      <div class="logo-nav">
-        <img class="img-fluid w-100" src="./assets/src/main/images/logo.svg" alt="logo">
-      </div>
+            <div class="logo-nav">
+                <a href="./index.html"><img class="img-fluid w-100" src="./assets/src/main/images/logo.svg"
+                        alt="logo"></a>
+            </div>
 
-      <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
-        <li><a href="./index.html">HOME PAGE</a></li>
-        <li><a href="#">SHOP</a><i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <ul class="ps-0">
-              <li><a href="#">SHOP GRID</a></li>
-              <li><a href="#">SHOP LIST</a></li>
-              <li><a href="#">SHOP SIDEBAR</a></li>
-              <li><a href="#">SHOP SINGLE</a></li>
-              <li><a href="#">SHOP CART</a></li>
-              <li><a href="#">CHECKOUT</a></li>
+            <ul class="  d-lg-flex d-none mb-0 list-unstyled gap-4 align-items-center flex-wrap fw-medium">
+                <li><a href="./index.html">HOME PAGE</a></li>
+                <li><a href="./shopGrid.html" class="active text-danger">SHOP</a><i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="./shopGrid.html">SHOP GRID</a></li>
+                            <li><a href="./shopDetails.html">SHOP Details</a></li>
+                            <li><a href="#">SHOP LIST</a></li>
+                            <li><a href="#">SHOP SIDEBAR</a></li>
+                            <li><a href="#">SHOP CART</a></li>
+                            <li><a href="#">CHECKOUT</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li><a href="#">BLOG</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0">
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">BLOG DETAILS</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">PAGES</a> <i class="fa-solid fa-angle-down"></i>
+                    <div class="mega-menu">
+                        <ul class="ps-0 test">
+                            <li><a href="./about.html">ABOUT US</a></li>
+                            <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">CHEF</a></li>
+                                    <li><a href="#">CHEF DETAILS</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
+
+                                <ul class="nested-mega-menu">
+                                    <li><a href="#">FOOD MENU</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">GALLARY</a></li>
+                            <li><a href="#">TESTIMONIALS</a></li>
+                            <li><a href="#">RESERVATION</a></li>
+                            <li><a href="#">FAQ'S</a></li>
+                            <li><a href="#">404 PAGE</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./contact.html">CONTACT</a></li>
             </ul>
-          </div>
 
-        </li>
-        <li><a href="#">BLOG</a> <i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <ul class="ps-0">
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">BLOG DETAILS</a></li>
+            <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
 
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">PAGES</a> <i class="fa-solid fa-angle-down"></i>
-          <div class="mega-menu">
-            <ul class="ps-0 test">
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">CHEF PAGE <i class="fa-solid fa-angle-down"></i> </a>
+                <div class="d-md-block d-none cart-notification cursor__pointer">
+                    <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
+                </div>
 
+                <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
+                    CONTACT US
+                </button>
 
-                <ul class="nested-mega-menu">
-                  <li><a href="#">CHEF</a></li>
-                  <li><a href="#">CHEF DETAILS</a></li>
-                </ul>
+                <button class="bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    <span class="first"></span>
+                    <span class="second"></span>
+                    <span class="third"></span>
+                </button>
 
-              </li>
-              <li><a href="#">FOOD MENU <i class="fa-solid fa-angle-down"></i></a>
+            </div>
 
-                <ul class="nested-mega-menu">
-                  <li><a href="#">FOOD MENU</a></li>
-                </ul>
-
-              </li>
-              <li><a href="#">GALLARY</a></li>
-              <li><a href="#">TESTIMONIALS</a></li>
-              <li><a href="#">RESERVATION</a></li>
-              <li><a href="#">FAQ'S</a></li>
-              <li><a href="#">404 PAGE</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-
-      <div class=" nav-info d-flex align-items-center gap-4 flex-wrap">
-
-        <div class="d-md-block d-none cart-notification cursor__pointer">
-          <i class="fa-solid fa-basket-shopping" style="font-size: 18px; color: #e91c1c;"></i>
         </div>
-
-        <button class="d-md-block d-none main-btn py-lg-3 px-lg-4 p-sm-2">
-          CONTACT US
-        </button>
-
-        <button class="bar-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-          aria-controls="offcanvasRight">
-          <span class="first"></span>
-          <span class="second"></span>
-          <span class="third"></span>
-        </button>
-
-      </div>
-
-    </div>
-  </nav>
-  <!-- end navbar -->
+    </nav>
+    <!-- end navbar -->
 
   <!-- start offcanvas -->
   <div class="offcanvas offcanvas-end px-2" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -1422,6 +1423,9 @@
     </div>
   </footer>
   <!-- end footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
